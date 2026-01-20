@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Coins : MonoBehaviour
 {
+ [SerializeField] private float _speed = 3f;
 
     void Start()
     {
@@ -12,15 +14,20 @@ public class Coins : MonoBehaviour
 
     void Update()
     {
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        string tag = collision.gameObject.tag;
-        if (tag.Equals("Player"))
+        //float positionx = Random.Range(1f, 2f);
+        //transform.position = new Vector3(transform.position.x - positionx, transform.position.y, transform.position.z);
+        transform.Translate(Vector3.left * _speed * Time.deltaTime);
+        if(transform.position.x < -3f)
         {
             Destroy(this.gameObject);
         }
     }
+
 }
+
+   
+
+
+        
+    
+

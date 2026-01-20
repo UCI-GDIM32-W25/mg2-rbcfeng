@@ -667,6 +667,7 @@ MonoBehaviour:
   _collider: {fileID: 1617081398}
   _rigidbody: {fileID: 1617081402}
   _jump: 6
+  _gameController: {fileID: 1313590637}
 --- !u!50 &1617081402
 Rigidbody2D:
   serializedVersion: 4
