@@ -1,11 +1,8 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/7qg5CCgx)
+
 # HW2
 ## Devlog
-Write your Devlog here!
-
+The MG2 break-down activity connects to the code I wrote because the Player, UI, ground, and coins are objects in the game world Unity Scene. Also in the Player class, which is stated as the Penguin class in the MG2 break-down activity, the attributes included the sprite, dynamic rigidbody, and the capsule collider. Actions in the break-down activity connects to my code through the Input.GetKeyDown(Keycode.Space) code that makes the penguin jump when space is pressed. In the GameController class, which is stated as the UI class in the MG2 break-down activity, the attributes included the _textpointsnumber, as well as the action of updating the points text in the UpdatePointsDisplay() method. In the Coins class, my code reflected the connection of the MG2 break-down activity through the attributes of the coin sprite, the Random.Range, the checked IsTriggered box, the kinematic rigidbody, and the circle collider. In the MG2 break-down activity and my code, the ground had the attributes of color, box collider, and a kinematic rigidbody. For the connections between the penguin and ground objects, the MG2 break-down activity and my code included the _IsGrounded bool in the Player class. For the connection between the penguin and the coins, the break-down activity and my code included the OnTriggerEnter2D which will destroy the coin gameObject and call the UpdatePointsDisplay() method.
 
 ## Open-Source Assets
-If you added any other outside assets, list them here!
-- [Sprout Lands sprite asset pack](https://cupnooble.itch.io/sprout-lands-asset-pack) - rabbit and item sprites
 - [Pixel Penguin 32x32 Asset pack](https://legends-games.itch.io/pixel-penguin-32x32-asset-pack) - penguin sprites
 - [Coins 2D](https://artist2d3d.itch.io/2d) - coin sprites
